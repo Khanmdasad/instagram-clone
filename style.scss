@@ -6,17 +6,70 @@
 
 
 
-.main_contianer {}
+.main_contianer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    // side bar starts
+    .sidebar {
+        width: 25vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        ul li {
+            display: flex;
+
+            margin: 32px;
+            list-style-type: none;
 
 
-.sidebar ul li {
-    list-style-type: none;
+            img {
+                width: 18px;
+            }
+
+            #profile {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    // side bar ends 
+
+    // main section start
+
+    .main {
+        width: 50vw;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+        .post-section {
+            width: 24vw;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+
+            .post .upper-section {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .profile-info {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    // main section ends
+    .footer {
+        width: 25vw;
+    }
 }
 
-.sidebar ul li img {
-    width: 18px;
-}
-
-#profile {
-    border-radius: 50%;
-}
+// main_conatiner ends
