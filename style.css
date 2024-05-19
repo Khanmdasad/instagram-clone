@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sidebar ul li {
+  list-style-type: none;
+}
+
+.sidebar ul li img {
+  width: 18px;
+}
+
+#profile {
+  border-radius: 50%;
+}/*# sourceMappingURL=style.css.map */
