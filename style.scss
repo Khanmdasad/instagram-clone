@@ -21,11 +21,16 @@
         justify-content: space-between;
 
         ul li {
-            display: flex;
-
-            margin: 32px;
+            margin: 15px;
             list-style-type: none;
+            font-size: 18px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
 
+            div {
+                margin: 10px;
+            }
 
             img {
                 width: 18px;
@@ -34,6 +39,8 @@
             #profile {
                 border-radius: 50%;
             }
+
+
         }
     }
 
@@ -42,28 +49,90 @@
     // main section start
 
     .main {
+        margin: 20px;
         width: 50vw;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
 
         .post-section {
+            margin: 20px 0px;
             width: 24vw;
             display: flex;
             justify-content: space-evenly;
             flex-direction: column;
+            gap: 15px;
 
-            .post .upper-section {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
+            .post {
 
-                .profile-info {
+                // upper section starts
+                .upper-section {
                     display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
                     align-items: center;
+
+                    // profile info starts                  
+
+                    .profile-info {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+
+                        h5 {
+                            font-size: 14px;
+                            font-weight: 900;
+                        }
+
+                        p {
+                            font-size: 11px;
+                        }
+                    }
+
+                    // profile info ends
                 }
+
+                // upper section ends
+
+                // footer sections start
+                .footer-section {
+                    margin: 10px 0px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    .reach {
+                        font-size: 24px;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .description {
+                        display: grid;
+                        gap: 5px;
+
+                        h6 {
+                            font-size: 13px;
+                            font-weight: bolder;
+                        }
+
+                        .blue {
+                            color: #00376B;
+                        }
+
+                        .add-comment {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+
+                // footer sections ends
+
             }
         }
+
+        // post section ends
     }
 
     // main section ends

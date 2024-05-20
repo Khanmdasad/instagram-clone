@@ -18,9 +18,15 @@
   justify-content: space-between;
 }
 .main_contianer .sidebar ul li {
-  display: flex;
-  margin: 32px;
+  margin: 15px;
   list-style-type: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main_contianer .sidebar ul li div {
+  margin: 10px;
 }
 .main_contianer .sidebar ul li img {
   width: 18px;
@@ -29,25 +35,63 @@
   border-radius: 50%;
 }
 .main_contianer .main {
+  margin: 20px;
   width: 50vw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
 }
 .main_contianer .main .post-section {
+  margin: 20px 0px;
   width: 24vw;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  gap: 15px;
 }
 .main_contianer .main .post-section .post .upper-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .main_contianer .main .post-section .post .upper-section .profile-info {
   display: flex;
   align-items: center;
+  gap: 5px;
+}
+.main_contianer .main .post-section .post .upper-section .profile-info h5 {
+  font-size: 14px;
+  font-weight: 900;
+}
+.main_contianer .main .post-section .post .upper-section .profile-info p {
+  font-size: 11px;
+}
+.main_contianer .main .post-section .post .footer-section {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main_contianer .main .post-section .post .footer-section .reach {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_contianer .main .post-section .post .footer-section .description {
+  display: grid;
+  gap: 5px;
+}
+.main_contianer .main .post-section .post .footer-section .description h6 {
+  font-size: 13px;
+  font-weight: bolder;
+}
+.main_contianer .main .post-section .post .footer-section .description .blue {
+  color: #00376B;
+}
+.main_contianer .main .post-section .post .footer-section .description .add-comment {
+  display: flex;
+  justify-content: space-between;
 }
 .main_contianer .footer {
   width: 25vw;
